@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <section class="forms">
+        <div class="forms__switcher">
+          <div class="btn btn-reg active" id="form-reg">Регистрация</div>
+          <div class="btn btn-log" id="form-login">Логин</div>
+        </div>
+        <div class="forms">
+          <form class="form form-reg active">
+            <h2>Создание аккаунта</h2>
+
+            <div class="input__group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                required
+                id="email"
+                placeholder="Введите email..."
+              />
+            </div>
+
+            <div class="input__group">
+              <label for="password">Пароль</label>
+              <input
+                type="password"
+                name="password"
+                required
+                id="password"
+                placeholder="Пароль..."
+              />
+            </div>
+
+            <button class="btn">Создать пользователя</button>
+          </form>
+
+          <form class="form form-login">
+            <h2>Вход в аккаунт</h2>
+
+            <div class="input__group">
+              <label for="login_email">Email</label>
+              <input
+                type="email"
+                required
+                name="email"
+                id="login_email"
+                placeholder="Введите email..."
+              />
+            </div>
+            <div class="input__group">
+              <label for="login_password">Пароль</label>
+              <input
+                type="password"
+                name="password"
+                required
+                id="login_password"
+                placeholder="Пароль..."
+              />
+            </div>
+
+            <button class="btn">Войти в аккаунт</button>
+          </form>
+        </div>
+        <div class="registered__users">
+          <h2>Зарегистрированные пользователи</h2>
+          <div class="registered__users_list"></div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
